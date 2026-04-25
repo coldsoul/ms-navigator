@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionLayout from '../components/SectionLayout.astro';
 
 const entry = await getEntry('sections', 'kakvo-e-ms');
+if (!entry) throw new Error('Section not found: kakvo-e-ms');
 const { Content } = await entry.render();
 ---
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
