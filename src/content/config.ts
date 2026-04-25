@@ -5,6 +5,7 @@ const sections = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string(),
+    draft: z.boolean().optional(),
   }),
 });
 
