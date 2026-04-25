@@ -1,0 +1,14 @@
+---
+// src/pages/simptomi.astro
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionLayout from '../components/SectionLayout.astro';
+
+const entry = await getEntry('sections', 'simptomi');
+const { Content } = await entry.render();
+---
+<BaseLayout title={entry.data.title} description={entry.data.summary}>
+  <SectionLayout title={entry.data.title} summary={entry.data.summary}>
+    <Content />
+  </SectionLayout>
+</BaseLayout>
