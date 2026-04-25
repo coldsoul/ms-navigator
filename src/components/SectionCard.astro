@@ -1,0 +1,38 @@
+---
+// src/components/SectionCard.astro
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+  href: string;
+  animationDelay?: string;
+}
+const { title, description, icon, href, animationDelay = '0s' } = Astro.props;
+---
+<a
+  href={href}
+  class="group flex items-start gap-4 bg-ms-card border border-ms-border rounded-card p-[1.35rem_1.4rem] no-underline text-ms-text transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(60,60,50,0.06),0_1px_4px_rgba(60,60,50,0.06)] hover:border-ms-accent focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ms-accent focus-visible:ring-offset-2 min-h-[48px] animate-fade-in-up"
+  style={`animation-delay: ${animationDelay}`}
+>
+  <div
+    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-ms-accent-light rounded-lg text-2xl leading-none"
+    aria-hidden="true"
+  >
+    {icon}
+  </div>
+  <div class="flex-1 min-w-0">
+    <div class="font-heading font-semibold text-[1.05rem] leading-[1.35] text-ms-text mb-1">
+      {title}
+    </div>
+    <div class="text-[0.92rem] text-ms-muted leading-[1.5]">
+      {description}
+    </div>
+  </div>
+  <svg
+    class="flex-shrink-0 text-ms-accent opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200 self-center"
+    width="20" height="20" viewBox="0 0 20 20" fill="none"
+    aria-hidden="true"
+  >
+    <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>

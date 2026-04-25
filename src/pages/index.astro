@@ -1,6 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionCard from '../components/SectionCard.astro';
 ---
 <BaseLayout title="МС Навигатор" description="Тест.">
-  <p class="p-8 text-ms-text">Layout works.</p>
+  <div class="p-8">
+    <SectionCard
+      title="Какво е множествена склероза?"
+      description="Какво се случва в тялото ти, обяснено с прости думи."
+      icon="🧠"
+      href="/kakvo-e-ms"
+      animationDelay="0.03s"
+    />
+  </div>
 </BaseLayout>
