@@ -3,3 +3,13 @@
 .dolt/
 *.db
 .beads-credential-key
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
