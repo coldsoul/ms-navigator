@@ -1,15 +1,62 @@
 ---
+// src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionCard from '../components/SectionCard.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+
+const sections = [
+  { icon: "🧠", title: "Какво е множествена склероза?",  description: "Какво се случва в тялото ти, обяснено с прости думи.",                href: "/kakvo-e-ms" },
+  { icon: "📋", title: "Видове МС",                      description: "Пристъпно-ремитентна, прогресираща — какво означават за теб.",           href: "/vidove-ms" },
+  { icon: "⚡", title: "Какво е пристъп?",               description: "Как да разпознаеш пристъп и какво да правиш.",                          href: "/pristap" },
+  { icon: "🔍", title: "Симптоми",                       description: "Какво може да изпитваш и защо е различно при всеки.",                    href: "/simptomi" },
+  { icon: "🏥", title: "Изследвания",                    description: "ЯМР, лумбална пункция — какво означават резултатите.",                   href: "/izsledvania" },
+  { icon: "💊", title: "Лечение",                        description: "Какви терапии съществуват днес, включително HSCT.",                      href: "/lechenie" },
+  { icon: "👨‍⚕️", title: "Твоят медицински екип",       description: "Как да работиш ефективно с лекарите си.",                               href: "/meditsinski-ekip" },
+  { icon: "🥗", title: "Хранене и диети",                description: "Какво знае науката и какво е просто мода.",                             href: "/hranene-i-dieti" },
+  { icon: "🚩", title: "Внимание: шарлатани",            description: "Как да разпознаеш фалшиви \"лекове\" и измами.",                          href: "/sharlatani" },
+  { icon: "💛", title: "Емоционалната страна",           description: "За скръбта, страха и как да се справиш.",                               href: "/emotsii" },
+  { icon: "❓", title: "Често задавани въпроси",         description: "Работа, деца, спорт — бързи отговори.",                                 href: "/chesti-vaprosi" },
+];
 ---
-<BaseLayout title="МС Навигатор" description="Тест.">
-  <div class="p-8">
-    <SectionCard
-      title="Какво е множествена склероза?"
-      description="Какво се случва в тялото ти, обяснено с прости думи."
-      icon="🧠"
-      href="/kakvo-e-ms"
-      animationDelay="0.03s"
-    />
+<BaseLayout
+  title="МС Навигатор"
+  description="Информация за множествена склероза на разбираем български език. Създадено от човек с МС, за хора с МС."
+>
+  <header class="max-w-content mx-auto px-6 pt-10">
+    <div class="flex items-center gap-2 font-heading font-bold text-[1.75rem] tracking-[-0.02em] text-ms-accent">
+      <span class="w-[10px] h-[10px] rounded-full bg-ms-accent opacity-50 inline-block" aria-hidden="true"></span>
+      МС Навигатор
+    </div>
+  </header>
+
+  <section class="max-w-content mx-auto px-6 pt-8 pb-4" aria-labelledby="hero-heading">
+    <h1 id="hero-heading" class="font-heading font-bold text-[clamp(1.6rem,4vw,2.2rem)] leading-[1.3] tracking-[-0.01em] text-ms-text mb-3">
+      Информация за множествена склероза на разбираем български език
+    </h1>
+    <p class="text-[1.1rem] text-ms-muted max-w-[600px] leading-[1.65]">
+      Създадено от човек с МС, за хора с МС. Тук ще намериш ясни и честни отговори — без медицински жаргон и без излишна паника.
+    </p>
+  </section>
+
+  <div class="mt-2 mb-0">
+    <Disclaimer />
   </div>
+
+  <section class="max-w-content mx-auto px-6 pt-7 pb-12" aria-label="Раздели">
+    <div class="grid grid-cols-1 gap-[0.85rem] sm-ms:grid-cols-2">
+      {sections.map((s, i) => (
+        <SectionCard
+          title={s.title}
+          description={s.description}
+          icon={s.icon}
+          href={s.href}
+          animationDelay={`${(i + 1) * 0.03}s`}
+        />
+      ))}
+    </div>
+  </section>
+
+  <footer class="max-w-content mx-auto px-6 py-6 border-t border-ms-border text-[0.85rem] text-ms-muted text-center leading-[1.6]">
+    МС Навигатор &middot; Създадено с грижа от човек с МС &middot; Не заменя медицински съвет
+  </footer>
 </BaseLayout>
