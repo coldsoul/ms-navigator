@@ -1,0 +1,40 @@
+---
+// src/layouts/BaseLayout.astro
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const fullTitle = title === 'МС Навигатор' ? title : `${title} — МС Навигатор`;
+---
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="bg_BG" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+  />
+  <!-- Analytics: add script tag here when ready -->
+</head>
+<body class="bg-ms-bg font-body text-[18px] leading-[1.7] text-ms-text antialiased">
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-ms-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none"
+  >
+    Прескочи към съдържанието
+  </a>
+  <main id="main-content">
+    <slot />
+  </main>
+</body>
+</html>
