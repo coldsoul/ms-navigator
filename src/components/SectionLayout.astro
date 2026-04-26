@@ -8,7 +8,17 @@ interface Props {
   summary: string;
 }
 const { title, summary } = Astro.props;
+const webPageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": title,
+  "description": summary,
+  "url": Astro.url.href,
+  "inLanguage": "bg",
+  "isPartOf": { "@type": "WebSite", "url": "https://ms-navigator.eu/" },
+});
 ---
+<script type="application/ld+json" set:html={webPageSchema} />
 <div class="max-w-content mx-auto px-6 pt-8 pb-12">
   <BackButton />
   <h1 class="font-heading font-bold text-[clamp(1.4rem,3.5vw,1.8rem)] leading-[1.3] text-ms-text mb-2">

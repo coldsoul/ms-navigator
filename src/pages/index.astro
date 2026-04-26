@@ -4,6 +4,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionCard from '../components/SectionCard.astro';
 import Disclaimer from '../components/Disclaimer.astro';
 
+const websiteSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "МС Навигатор",
+  "url": "https://ms-navigator.eu/",
+  "description": "Информация за множествена склероза на разбираем български език. Създадено от човек с МС, за хора с МС.",
+  "inLanguage": "bg",
+});
+
 const sections = [
   { icon: "🧠", title: "Какво е множествена склероза?",  description: "Какво се случва в тялото ти, обяснено с прости думи.",                href: "/kakvo-e-ms" },
   { icon: "📋", title: "Видове МС",                      description: "Пристъпно-ремитентна, прогресираща — какво означават за теб.",           href: "/vidove-ms" },
@@ -55,6 +64,8 @@ const sections = [
       ))}
     </div>
   </section>
+
+  <script type="application/ld+json" set:html={websiteSchema} />
 
   <footer slot="footer" class="max-w-content mx-auto px-6 py-6 border-t border-ms-border text-[0.85rem] text-ms-muted text-center leading-[1.6]">
     МС Навигатор &middot; Създадено с грижа от човек с МС &middot; Не заменя медицински съвет
