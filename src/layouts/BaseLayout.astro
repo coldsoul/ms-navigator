@@ -6,6 +6,7 @@ interface Props {
 }
 const { title, description } = Astro.props;
 const fullTitle = title === 'МС Навигатор' ? title : `${title} — МС Навигатор`;
+const canonicalURL = Astro.url.href;
 ---
 <!DOCTYPE html>
 <html lang="bg">
@@ -14,9 +15,11 @@ const fullTitle = title === 'МС Навигатор' ? title : `${title} — М
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
   <meta property="og:locale" content="bg_BG" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +28,12 @@ const fullTitle = title === 'МС Навигатор' ? title : `${title} — М
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Source+Sans+3:wght@400;500;600&display=swap"
   />
-  <!-- Analytics: add script tag here when ready -->
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-h3yzDzGttTI0Rpn-nzLYA.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
 </head>
 <body class="bg-ms-bg font-body text-[18px] leading-[1.7] text-ms-text antialiased">
   <a
