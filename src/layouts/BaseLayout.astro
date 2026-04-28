@@ -10,6 +10,32 @@ const siteName = lang === 'en' ? 'MS Navigator' : 'МС Навигатор';
 const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
 const canonicalURL = Astro.url.href;
 const ogLocale = lang === 'en' ? 'en_US' : 'bg_BG';
+
+const HREFLANG_ROUTES: Record<string, string> = {
+  '/':                    '/en/',
+  '/kakvo-e-ms/':         '/en/what-is-ms/',
+  '/vidove-ms/':          '/en/types-of-ms/',
+  '/pristap/':            '/en/relapse/',
+  '/simptomi/':           '/en/symptoms/',
+  '/izsledvania/':        '/en/tests/',
+  '/lechenie/':           '/en/treatment/',
+  '/meditsinski-ekip/':   '/en/medical-team/',
+  '/hranene-i-dieti/':    '/en/diet-and-nutrition/',
+  '/sharlatani/':         '/en/scams/',
+  '/emotsii/':            '/en/emotions/',
+  '/chesti-vaprosi/':     '/en/faq/',
+  '/za-sayta/':           '/en/about/',
+};
+const HREFLANG_REVERSE: Record<string, string> = Object.fromEntries(
+  Object.entries(HREFLANG_ROUTES).map(([bg, en]) => [en, bg])
+);
+const currentPath = Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : Astro.url.pathname + '/';
+const alternatePath = HREFLANG_ROUTES[currentPath] ?? HREFLANG_REVERSE[currentPath];
+const alternateURL  = alternatePath ? new URL(alternatePath, Astro.site).href : null;
+const bgPath        = HREFLANG_REVERSE[currentPath] ?? (HREFLANG_ROUTES[currentPath] ? currentPath : null);
+const bgURL         = bgPath ? new URL(bgPath, Astro.site).href : null;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -19,6 +45,11 @@ const ogLocale = lang === 'en' ? 'en_US' : 'bg_BG';
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalURL} />
+  {alternateURL && <>
+    <link rel="alternate" hreflang={lang} href={canonicalURL} />
+    <link rel="alternate" hreflang={lang === 'en' ? 'bg' : 'en'} href={alternateURL} />
+    <link rel="alternate" hreflang="x-default" href={bgURL ?? canonicalURL} />
+  </>}
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />

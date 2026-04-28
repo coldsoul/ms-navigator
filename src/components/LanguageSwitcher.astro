@@ -69,6 +69,18 @@
   const isEn = path.startsWith('/en/');
   const alternate = getAlternate(path);
 
+  // Auto-detect on first visit (no stored preference yet)
+  const storedLang = localStorage.getItem('lang');
+  if (!storedLang) {
+    const browserLang = (navigator.language || '').toLowerCase();
+    if (!browserLang.startsWith('bg') && !isEn) {
+      localStorage.setItem('lang', 'en');
+      window.location.href = alternate;
+    } else {
+      localStorage.setItem('lang', isEn ? 'en' : 'bg');
+    }
+  }
+
   const btnBg = document.getElementById('ls-bg') as HTMLButtonElement;
   const btnEn = document.getElementById('ls-en') as HTMLButtonElement;
 
@@ -84,6 +96,4 @@
     localStorage.setItem('lang', 'en');
     if (!isEn) window.location.href = alternate;
   });
-
-  localStorage.setItem('lang', isEn ? 'en' : 'bg');
 </script>
