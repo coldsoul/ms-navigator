@@ -3,6 +3,8 @@ title: "Your Medical Team"
 summary: "MS is a disease you'll live with for a long time. That means your relationship with your doctors isn't a one-time visit — it's a partnership. And like any partnership, good communication is key."
 ---
 
+> **Note:** Much of the information on this page — particularly around the healthcare structure, specialist access, and treatment reimbursement — reflects the **Bulgarian medical system**. If you're based in another country, the specifics will differ, but the general principles around communicating with your doctor and building a care team still apply.
+
 ## Neurologist and MS specialist — there's a difference
 
 Not every neurologist actively works with MS. Neurology is a vast field and many neurologists specialize in other things — epilepsy, strokes, dementia.
