@@ -1,5 +1,6 @@
 ---
 // src/layouts/BaseLayout.astro
+import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
@@ -64,7 +65,7 @@ const bgURL         = bgPath ? new URL(bgPath, Astro.site).href : null;
   />
   
   <!-- Privacy-friendly analytics by Plausible -->
-  <script async src="https://plausible.io/js/pa-5ZLPnL2CvKSxe_WS3E2tB.js"></script>
+  <script is:inline async src="https://plausible.io/js/pa-5ZLPnL2CvKSxe_WS3E2tB.js"></script>
   <script is:inline>
     window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
     plausible.init()

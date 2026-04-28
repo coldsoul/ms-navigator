@@ -1,12 +1,12 @@
 ---
 // src/pages/chesti-vaprosi.astro
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionLayout from '../components/SectionLayout.astro';
 
 const entry = await getEntry('sections', 'chesti-vaprosi');
 if (!entry) throw new Error('Section not found: chesti-vaprosi');
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 // Mirrors the Q&A content in src/content/sections/chesti-vaprosi.md
 const faqSchema = JSON.stringify({
@@ -74,6 +74,6 @@ const faqSchema = JSON.stringify({
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
   <SectionLayout title={entry.data.title} summary={entry.data.summary}>
     <Content />
-    <script type="application/ld+json" set:html={faqSchema} />
+    <script is:inline type="application/ld+json" set:html={faqSchema} />
   </SectionLayout>
 </BaseLayout>

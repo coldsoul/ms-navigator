@@ -20,7 +20,7 @@ const webPageSchema = JSON.stringify({
   "isPartOf": { "@type": "WebSite", "url": "https://ms-navigator.bg/" },
 });
 ---
-<script type="application/ld+json" set:html={webPageSchema} />
+<script is:inline type="application/ld+json" set:html={webPageSchema} />
 <div class="max-w-content mx-auto px-6 pt-8 pb-12">
   <div class="flex items-center justify-between mb-0">
     <BackButton lang={lang} />

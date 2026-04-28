@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   site: 'https://ms-navigator.bg',
@@ -11,5 +12,12 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [tailwind(), sitemap()],
+  integrations: [sitemap()],
+  vite: {
+    css: {
+      postcss: {
+        plugins: [tailwindcss(), autoprefixer()],
+      },
+    },
+  },
 });
