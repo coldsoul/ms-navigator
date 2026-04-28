@@ -1,0 +1,22 @@
+---
+// src/pages/en/[slug].astro
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionLayout from '../../components/SectionLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('sections', ({ id }) => id.startsWith('en/'));
+  return entries.map(entry => ({
+    params: { slug: entry.id.replace('en/', '').replace(/\.md$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+<BaseLayout title={entry.data.title} description={entry.data.summary} lang="en">
+  <SectionLayout title={entry.data.title} summary={entry.data.summary} lang="en">
+    <Content />
+  </SectionLayout>
+</BaseLayout>

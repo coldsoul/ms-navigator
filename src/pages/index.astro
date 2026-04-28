@@ -3,12 +3,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionCard from '../components/SectionCard.astro';
 import Disclaimer from '../components/Disclaimer.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 const websiteSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "МС Навигатор",
-  "url": "https://ms-navigator.eu/",
+  "url": "https://ms-navigator.bg/",
   "description": "Информация за множествена склероза на разбираем български език. Създадено от човек с МС, за хора с МС.",
   "inLanguage": "bg",
 });
@@ -32,9 +33,12 @@ const sections = [
   description="Информация за множествена склероза на разбираем български език. Създадено от човек с МС, за хора с МС."
 >
   <header slot="header" class="max-w-content mx-auto px-6 pt-10">
-    <div class="flex items-center gap-2 font-heading font-bold text-[1.75rem] tracking-[-0.02em] text-ms-accent">
-      <span class="w-[10px] h-[10px] rounded-full bg-ms-accent opacity-50 inline-block" aria-hidden="true"></span>
-      МС Навигатор
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2 font-heading font-bold text-[1.75rem] tracking-[-0.02em] text-ms-accent">
+        <span class="w-[10px] h-[10px] rounded-full bg-ms-accent opacity-50 inline-block" aria-hidden="true"></span>
+        МС Навигатор
+      </div>
+      <LanguageSwitcher />
     </div>
   </header>
 

@@ -3,13 +3,16 @@
 interface Props {
   title: string;
   description: string;
+  lang?: string;
 }
-const { title, description } = Astro.props;
-const fullTitle = title === 'МС Навигатор' ? title : `${title} — МС Навигатор`;
+const { title, description, lang = 'bg' } = Astro.props;
+const siteName = lang === 'en' ? 'MS Navigator' : 'МС Навигатор';
+const fullTitle = title === siteName ? title : `${title} — ${siteName}`;
 const canonicalURL = Astro.url.href;
+const ogLocale = lang === 'en' ? 'en_US' : 'bg_BG';
 ---
 <!DOCTYPE html>
-<html lang="bg">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +23,7 @@ const canonicalURL = Astro.url.href;
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL} />
-  <meta property="og:locale" content="bg_BG" />
+  <meta property="og:locale" content={ogLocale} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

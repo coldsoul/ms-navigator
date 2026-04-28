@@ -1,0 +1,89 @@
+---
+// src/components/LanguageSwitcher.astro
+---
+<div class="flex items-center gap-0.5" role="navigation" aria-label="Language">
+  <button id="ls-bg" class="ls-btn" aria-pressed="false">BG</button>
+  <span class="ls-sep" aria-hidden="true">|</span>
+  <button id="ls-en" class="ls-btn" aria-pressed="false">EN</button>
+</div>
+
+<style>
+  .ls-btn {
+    padding: 0.2rem 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6B6860;
+    border-radius: 4px;
+    transition: color 0.15s;
+    letter-spacing: 0.06em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .ls-btn[aria-pressed="true"] {
+    color: #3B7A6A;
+    font-weight: 700;
+  }
+  .ls-btn:hover {
+    color: #2C2C2C;
+  }
+  .ls-sep {
+    font-size: 0.75rem;
+    color: #E8E6DF;
+    user-select: none;
+  }
+</style>
+
+<script>
+  const ROUTES: Record<string, string> = {
+    '/':                    '/en/',
+    '/kakvo-e-ms/':         '/en/what-is-ms/',
+    '/vidove-ms/':          '/en/types-of-ms/',
+    '/pristap/':            '/en/relapse/',
+    '/simptomi/':           '/en/symptoms/',
+    '/izsledvania/':        '/en/tests/',
+    '/lechenie/':           '/en/treatment/',
+    '/meditsinski-ekip/':   '/en/medical-team/',
+    '/hranene-i-dieti/':    '/en/diet-and-nutrition/',
+    '/sharlatani/':         '/en/scams/',
+    '/emotsii/':            '/en/emotions/',
+    '/chesti-vaprosi/':     '/en/faq/',
+    '/za-sayta/':           '/en/about/',
+  };
+
+  const REVERSE: Record<string, string> = Object.fromEntries(
+    Object.entries(ROUTES).map(([bg, en]) => [en, bg])
+  );
+
+  function normalize(path: string): string {
+    return path.endsWith('/') ? path : path + '/';
+  }
+
+  function getAlternate(path: string): string {
+    const p = normalize(path);
+    return ROUTES[p] ?? REVERSE[p] ?? (p.startsWith('/en/') ? '/' : '/en/');
+  }
+
+  const path = normalize(window.location.pathname);
+  const isEn = path.startsWith('/en/');
+  const alternate = getAlternate(path);
+
+  const btnBg = document.getElementById('ls-bg') as HTMLButtonElement;
+  const btnEn = document.getElementById('ls-en') as HTMLButtonElement;
+
+  btnBg.setAttribute('aria-pressed', String(!isEn));
+  btnEn.setAttribute('aria-pressed', String(isEn));
+
+  btnBg.addEventListener('click', () => {
+    localStorage.setItem('lang', 'bg');
+    if (isEn) window.location.href = alternate;
+  });
+
+  btnEn.addEventListener('click', () => {
+    localStorage.setItem('lang', 'en');
+    if (!isEn) window.location.href = alternate;
+  });
+
+  localStorage.setItem('lang', isEn ? 'en' : 'bg');
+</script>

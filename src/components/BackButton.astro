@@ -1,12 +1,18 @@
 ---
 // src/components/BackButton.astro
+interface Props {
+  lang?: string;
+}
+const { lang = 'bg' } = Astro.props;
+const href = lang === 'en' ? '/en/' : '/';
+const label = lang === 'en' ? 'Back to home' : 'Обратно към начало';
 ---
 <a
-  href="/"
+  href={href}
   class="inline-flex items-center gap-[0.4rem] text-[0.95rem] font-medium text-ms-accent hover:text-ms-accent-hover transition-colors duration-150 min-h-[48px] py-2 mb-6 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ms-accent rounded"
 >
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
     <path d="M13 16l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
-  Обратно към начало
+  {label}
 </a>
