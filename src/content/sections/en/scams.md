@@ -35,7 +35,7 @@ If you hear or read something about MS and it contains even one of the following
 
 **"Secret" dietary supplements** — products sold online with promises of "myelin restoration" or "immune system reset." They're usually expensive, unregulated, and have no scientific evidence whatsoever.
 
-**Stem cells in unregulated clinics** — don't confuse the legitimate HSCT procedure (which we discuss in the treatment section) with clinics, usually abroad, offering "stem cell therapy" without real medical oversight. They're dangerous, expensive, and have no proven effectiveness.
+**Stem cells in unregulated clinics** — don't confuse the legitimate HSCT procedure (which we discuss in [the treatment section](/en/treatment)) with clinics, usually abroad, offering "stem cell therapy" without real medical oversight. They're dangerous, expensive, and have no proven effectiveness.
 
 **Books and courses promising "the truth about MS"** — an entire industry of authors and "coaches" selling books, online courses, and programs with promises of revealing "what really causes MS" or "how to cure yourself." If someone had discovered a cure for MS, it would be published in medical literature and win a Nobel Prize — not sold as an e-book for 50 euros.
 
@@ -63,4 +63,4 @@ If it sounds too good to be true — it almost certainly isn't true.
 
 If someone promises you something that thousands of scientists worldwide haven't been able to achieve — ask yourself why this particular person succeeded and they didn't. The answer is usually simple: they didn't succeed. They're just lying.
 
-Trust your neurologist, ask questions, and remember — current medicine may not be able to cure MS, but it can help you live well. That's not nothing.
+Trust your neurologist, ask questions, and remember — current medicine may not be able to cure MS, but it can help you live well. Read [how to work effectively with your medical team](/en/medical-team). That's not nothing.

@@ -11,7 +11,7 @@ Just like electrical cables have a plastic coating that protects them, your nerv
 
 In multiple sclerosis, the immune system — the part of your body that normally protects you from viruses and bacteria — starts attacking the myelin by mistake. It confuses it with something dangerous, even though it's not.
 
-When the myelin is damaged, signals along the nerves slow down, end up in the wrong place, or don't reach their destination at all. That's exactly why MS symptoms can be so different — it depends on which nerves are affected. If the nerves leading to your legs are affected, you might have trouble walking. If it's the nerves to your eyes, you might have vision problems. And so on.
+When the myelin is damaged, signals along the nerves slow down, end up in the wrong place, or don't reach their destination at all. That's exactly why [MS symptoms](/en/symptoms) can be so different — it depends on which nerves are affected. If the nerves leading to your legs are affected, you might have trouble walking. If it's the nerves to your eyes, you might have vision problems. And so on.
 
 The body can repair some of the damage — that's why for many people, symptoms come and go, especially in the beginning. But over time, if the damage accumulates, repair becomes harder.
 

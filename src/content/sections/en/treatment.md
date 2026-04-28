@@ -52,10 +52,10 @@ HSCT is not a "cure for MS." In a successful procedure, the goal is to stop the 
 
 ## Symptom management
 
-Separate from therapies aimed at slowing the disease, there are also medications and approaches for managing specific symptoms — fatigue, spasticity, pain, bladder problems, and others. You don't have to just endure it. If a symptom is interfering with your daily life — tell your doctor. There are ways to help.
+Separate from therapies aimed at slowing the disease, there are also medications and approaches for managing specific [symptoms](/en/symptoms) — fatigue, spasticity, pain, bladder problems, and others. You don't have to just endure it. If a symptom is interfering with your daily life — tell your doctor. There are ways to help.
 
 ## Your right to participate in the decision
 
 MS treatment isn't something that just happens to you. You have the right to understand what's being proposed, why, and what the alternatives are. You have the right to ask questions, seek a second opinion, and actively participate in choosing your therapy.
 
-If something isn't clear — ask. If you're not happy with your treatment — speak up. You know your body best.
+If something isn't clear — ask. If you're not happy with your treatment — speak up. You know your body best. Read more about [how to work effectively with your medical team](/en/medical-team).

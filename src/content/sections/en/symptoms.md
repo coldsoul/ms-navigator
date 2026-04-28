@@ -31,10 +31,10 @@ It's important to know: you won't experience everything on the list below. Most 
 
 **Bladder problems** — frequent trips to the bathroom, urgency, or difficulty emptying the bladder.
 
-**Emotional changes** — anxiety, depression, or sudden mood swings. These are not "in your head" — they are a real symptom of the disease.
+**[Emotional changes](/en/emotions)** — anxiety, depression, or sudden mood swings. These are not "in your head" — they are a real symptom of the disease.
 
 ## The invisible symptoms
 
 Many MS symptoms are invisible from the outside. Fatigue, pain, brain fog, emotional changes — all of these are real but invisible to others. This can be incredibly frustrating because people around you might not understand how hard things are when you "look fine."
 
-If you're experiencing any of these symptoms — you're not making it up. It's the disease, not weakness.
+If you're experiencing any of these symptoms — you're not making it up. It's the disease, not weakness. If symptoms are new or suddenly get worse, read [what a relapse is and how to recognise it](/en/relapse).

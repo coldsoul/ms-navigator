@@ -13,13 +13,13 @@ Don't be scared by the names — they sound complicated, but the idea behind the
 
 This is the first episode — the first time your body shows symptoms that resemble MS. It could be numbness, a vision problem, or something else.
 
-Important: CIS doesn't automatically mean you have MS. For some people, this episode remains a one-time event and never repeats. For others, an MS diagnosis is confirmed over time. Your doctor will monitor things with MRI and other tests to understand which direction things are heading.
+Important: CIS doesn't automatically mean you have MS. For some people, this episode remains a one-time event and never repeats. For others, an MS diagnosis is confirmed over time. Your doctor will monitor things with [MRI and other tests](/en/tests) to understand which direction things are heading.
 
 ## Relapsing-Remitting MS (RRMS)
 
 This is the most common type — about 85% of people with MS start with it.
 
-How it works: you have periods of relapses, when new symptoms appear or existing ones get worse. After a relapse comes remission — a period when symptoms improve partially or completely. Between relapses you can feel fine — sometimes for months or even years.
+How it works: you have periods of [relapses](/en/relapse), when new symptoms appear or existing ones get worse. After a relapse comes remission — a period when symptoms improve partially or completely. Between relapses you can feel fine — sometimes for months or even years.
 
 Think of it like waves that come and go, with quiet periods in between.
 
@@ -27,7 +27,7 @@ Think of it like waves that come and go, with quiet periods in between.
 
 For some people, after years with relapsing-remitting MS, the disease gradually changes. Instead of clear relapses and remissions, a slow, steady worsening begins.
 
-This doesn't happen to everyone and it doesn't happen quickly. The transition is gradual and sometimes it's hard to pinpoint exactly when it started. Modern therapies aim to slow down or prevent this change.
+This doesn't happen to everyone and it doesn't happen quickly. The transition is gradual and sometimes it's hard to pinpoint exactly when it started. [Modern therapies](/en/treatment) aim to slow down or prevent this change.
 
 ## Primary Progressive MS (PPMS)
 

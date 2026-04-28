@@ -15,7 +15,7 @@ If you don't have access to an MS specialist, a general neurologist can still he
 
 In Bulgaria you'll encounter two key elements that are important to understand:
 
-**Dispensarized neurologist** — this is the doctor who monitors you on an ongoing basis. They examine you regularly, track your condition, order tests, and are the first person you call during a relapse or change in symptoms. Think of them as your primary MS doctor — the person who knows your history and follows the day-to-day course of the disease.
+**Dispensarized neurologist** — this is the doctor who monitors you on an ongoing basis. They examine you regularly, track your condition, order [tests](/en/tests), and are the first person you call during a [relapse](/en/relapse) or change in symptoms. Think of them as your primary MS doctor — the person who knows your history and follows the day-to-day course of the disease.
 
 **MS commission** — this is a team of specialists with a different role. The commission works with you to secure access to treatment. They prepare the documentation needed for medication reimbursement from NHIF (the National Health Insurance Fund). Without this documentation, access to most MS therapies is practically impossible because the medications are extremely expensive.
 

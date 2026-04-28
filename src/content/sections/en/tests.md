@@ -33,4 +33,4 @@ Blood tests in MS aren't done to confirm MS. They're done to rule out other cond
 
 MRI is usually done once or twice a year, but it depends on your situation. Your doctor will tell you the schedule. These regular check-ups are important — they help catch changes early, even if you're feeling fine.
 
-Don't be afraid of the tests. They're not a punishment — they're a way for you and your doctor to see what's happening inside, so you can make the right decisions together.
+Don't be afraid of the tests. They're not a punishment — they're a way for you and your doctor to see what's happening inside, so you can make the right decisions together. Read also [how to work effectively with your medical team](/en/medical-team).

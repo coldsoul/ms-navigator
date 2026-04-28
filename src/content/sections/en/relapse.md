@@ -25,7 +25,7 @@ But don't worry if you can't tell the difference. Even doctors sometimes can't s
 
 First and most important — don't panic. Relapses are part of the disease and don't mean something has gone fatally wrong.
 
-Call your neurologist and describe what you're experiencing. Try to write down:
+Call your neurologist and describe what you're experiencing. If you're not sure how to make the most of the appointment, read [how to prepare for a visit](/en/medical-team). Try to write down:
 - what symptoms you have
 - when they started
 - whether they're getting worse or staying stable
@@ -52,4 +52,4 @@ Corticosteroids don't "cure" the relapse — they reduce inflammation and help t
 
 In the periods between relapses, you might feel completely normal, or you might have residual symptoms from previous relapses. Both are normal.
 
-The most important thing you can do between relapses is follow the treatment your doctor has prescribed and take care of yourself — sleep, movement, less stress. You can't control whether or when the next relapse will come, but you can give your body the best conditions to cope.
+The most important thing you can do between relapses is follow the [treatment](/en/treatment) your doctor has prescribed and take care of yourself — sleep, movement, less stress. You can't control whether or when the next relapse will come, but you can give your body the best conditions to cope.

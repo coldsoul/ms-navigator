@@ -17,7 +17,7 @@ This is something few people talk about, but most people with MS experience. Gri
 
 This grief is real and deserves to be acknowledged. It's not weakness. It's not being dramatic. It's a normal response to very difficult news.
 
-And this grief can come back — not just at the beginning, but with every new relapse, with every change in your condition. That's normal too.
+And this grief can come back — not just at the beginning, but with every new [relapse](/en/relapse), with every change in your condition. That's normal too.
 
 ## Anxiety about the future
 
@@ -53,7 +53,7 @@ Telling family, friends, or colleagues that you have MS is a difficult decision.
 
 **Family** — tell them when you feel ready. They'll have questions. They might react with shock, fear, or even discomfort — because they don't know what to say. Give them time. It might help if you give them something specific to read — like this website.
 
-**Your employer** — you're not obligated to tell them right away if you don't want to. You have legal protections, and if you do decide to share, we'll talk more about your rights in a future section of the site.
+**Your employer** — you're not obligated to tell them right away if you don't want to. You have legal protections — read the [Frequently Asked Questions](/en/faq) for quick answers about work and your rights.
 
 **Friends** — some will understand, others won't. Some will stay, others will drift away. That hurts, but it's reality. The people who stay are the ones worth keeping.
 

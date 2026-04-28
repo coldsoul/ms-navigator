@@ -49,4 +49,4 @@ Instead of jumping into a radical diet tomorrow, think about simple changes:
 - Enough water
 - Talk to your doctor before cutting out entire food groups
 
-And remember: nutrition is important, but it's only one piece of the puzzle. Don't blame yourself if you don't follow a perfect diet. Nobody does.
+And remember: nutrition is important, but it's only one piece of the puzzle. Don't blame yourself if you don't follow a perfect diet. Nobody does. Also watch out for products and programmes that promise more than the science supports — read [how to spot scams](/en/scams).
